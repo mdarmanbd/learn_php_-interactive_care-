@@ -1,0 +1,32 @@
+[
+    {
+        "brand": "Apple",
+        "model": "15 Pro Max",
+        "price": 130000,
+        "isAvailable": true,
+        "shop": {
+            "Bashundhara": true,
+            "Jamuna": false
+        }
+    },
+    {
+        "brand": "Samsung",
+        "model": "S23 Ultra ",
+        "price": 110000,
+        "isAvailable": false,
+        "shop": {
+            "Bashundhara": false,
+            "Jamuna": false
+        }
+    },
+    {
+        "brand": "One Plus",
+        "model": "One plus Nored 50pax",
+        "price": 80000,
+        "isAvailable": true,
+        "shop": {
+            "Bashundhara": true,
+            "Jamuna": true
+        }
+    }
+]
