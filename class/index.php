@@ -20,7 +20,10 @@ $user = [
 ];
 
 $number = [10, 20, 30, 50, 60];
-
+$fruits = ["Apple", "Banna", "Orange"];
+$brand = "Apple, Iphone, Samsung";
+// $stringArray = explode(", " , $brand);
+// $arrayString = implode(", " ,$fruits); convart to array to string
 // array_push($number, 80); add element in last on the array
 // array_push($number, 800);
 // array_pop($number);  delet the last element on the array
@@ -30,12 +33,13 @@ $number = [10, 20, 30, 50, 60];
 // sort($number);
 // $number = array_sum($number);
 // $newSlice = array_slice($number, 2, 2); cutting and create a new array 
-array_splice($number, 1, 2, [100,500,900]);
-
+// array_splice($number, 1, 2, [100,500,900]);
+// $foundValue = in_array(10, $number); find a value in an array
+ 
 echo '<pre>';
 // print_r($user);
 // var_dump(count($number));
-var_dump($number);
+var_dump($stringArray);
 // var_dump($newSlice);
 echo '</pre>';
 
