@@ -62,12 +62,52 @@ $persons = [
     ]
 ];
 
-$file_pointer = fopen($file_name, "w");
 
-foreach( $persons as $person ){
-    // $data = sprintf("%s,%s,%s\n", $person['name'], $person['mail'], $person['age']);
-    // fwrite($file_pointer, $data);
+$json_data = json_encode($persons);
+file_put_contents($file_name, $json_data, LOCK_EX);
 
-    fputcsv($file_pointer, $person);
+$get_data = file_get_contents($file_name);
+// echo "<pre>";
+// print_r($get_data);
+// echo "</pre>";
+$allPersons = json_decode($get_data, true);
+print_r($allPersons);
 
-}
+// write data
+// $data = serialize($persons);
+// file_put_contents($file_name, $data, LOCK_EX);
+
+// read data
+// $data_from_file = file_get_contents($file_name);
+// $personsNew = unserialize($data_from_file);
+// echo "<pre>";
+// print_r($personsNew);
+// echo "</pre>";
+
+// $file_pointer = fopen($file_name, "w");
+
+// foreach( $persons as $person ){
+//     $data = sprintf("%s,%s,%s\n", $person['name'], $person['mail'], $person['age']);
+//     fwrite($file_pointer, $data);
+
+//     fputcsv($file_pointer, $person);
+
+// }
+
+// fclose($file_pointer);
+
+// $file_pointer = fopen($file_name, "r");
+
+// while($data = fgetcsv($file_pointer)){
+    // $person = explode(",", $data);
+    // echo "<pre>";
+    // print_r($person);
+    // echo "</pre>";
+
+    // printf("Name: %s\n Mail: %s\n Age: %s\n", $person[0], $person[1], $person[2]);
+
+
+    // printf("Name: %s\n Mail: %s\n Age: %s\n", $data[0], $data[1], $data[2]);
+
+// }
+ 

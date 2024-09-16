@@ -1,3 +1,1 @@
-"John Doe",john@gmail.com,31
-"Jehn Doe",jehn@gmail.com,32
-"tension Doe",tension@gmail.com,30
+[{"name":"John Doe","mail":"john@gmail.com","age":31},{"name":"Jehn Doe","mail":"jehn@gmail.com","age":32},{"name":"tension Doe","mail":"tension@gmail.com","age":30}]
