@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <code>
+    <!-- <code>
         <?php
         print_r($_POST);
         ?>
-    </code>
+    </code> -->
 
     <?php 
         $quizData = file_get_contents('data/quiz.json');
@@ -25,9 +25,9 @@
         for($i = 0; $i < $totalQuestions; $i++){
             $userAnswer = $_POST['quiz' . $i] ?? null;
             if($questions[$i]['type'] == 'single'){
-                
                 if($userAnswer == $questions[$i]['answer']){
                     $score++;
+                    echo $score;
                 }
             }elseif($questions[$i]['type'] == 'multiple'){
                 $answer = $questions[$i]['answer'];

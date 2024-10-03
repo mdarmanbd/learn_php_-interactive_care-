@@ -1,8 +1,6 @@
 <?php 
 session_start();
 $_SESSION['loggedin'] = '';
-// $error = false;
-
 $error = false;
 
 if(isset($_POST['username']) && isset($_POST['password'])){

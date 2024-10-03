@@ -105,8 +105,6 @@ print_r($allPersons);
     // echo "</pre>";
 
     // printf("Name: %s\n Mail: %s\n Age: %s\n", $person[0], $person[1], $person[2]);
-
-
     // printf("Name: %s\n Mail: %s\n Age: %s\n", $data[0], $data[1], $data[2]);
 
 // }
