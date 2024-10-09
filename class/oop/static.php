@@ -49,14 +49,31 @@ class chieldClass extends parentClass{
     }
 }
 
-chieldClass::sayHi();
+// chieldClass::sayHi();
 
 
+class A{
+    private $name;
+    private static $fullName;
+    protected static $lastName;
+    static function sayHi(){
+        // self::$name = 'fjhsksjd';
+        self::$fullName;
+        echo "Hi Bro <br>";
+    }
+}
+
+class B extends A{
+    static function sayHi(){
+        self::$lastName = 'This is abu ubaida';
+        parent::sayHi();
+        // echo parent::$fullName;
+        echo "This is chiled class";
+    }
+}
 
 
-
-
-
+B::sayHi();
 
 
 
